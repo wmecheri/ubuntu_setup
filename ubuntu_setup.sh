@@ -51,4 +51,11 @@ find ~ -name "*Zone.Identifier" -type f -delete 2>/dev/null
 # Keybinds
 bind '"\C-o":"lf\n"'
 EOF
+
+source .bashrc
 echo
+
+echo "Clone nvim and tmux configuration..."
+g clone git@github.com:wmecheri/nvim.git
+g clone git@github.com:wmecheri/tmux.git
+
