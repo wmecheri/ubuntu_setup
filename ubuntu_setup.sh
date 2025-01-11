@@ -8,7 +8,7 @@ ln -s /mnt/c/Users/wassi/Downloads ~/Downloads
 echo
 
 echo "Basic tools installation..."
-sudo apt install -y build-essential fd-find git lf nodejs npm openjdk-21-jdk python-is-python3 python3-pip python3-venv ripgrep sqlite3 tree unzip
+sudo apt install -y build-essential fd-find git lf nodejs npm openjdk-21-jdk python-is-python3 python3-pip python3-venv ripgrep sqlite3 tree unzip cmake
 wget https://github.com/neovim/neovim/releases/download/v0.10.3/nvim-linux64.tar.gz
 tar xzf nvim-linux64.tar.gz -C ~/.local/bin --strip-components=1
 rm -rf nvim-linux64.tar.gz
@@ -55,7 +55,9 @@ EOF
 source .bashrc
 echo
 
+# TROUVER SOLUTION POUR PAS A VOIR A COPIER COMME UN GOLBUTE LES CLE SSH
+
 echo "Clone nvim and tmux configuration..."
-g clone git@github.com:wmecheri/nvim.git
-g clone git@github.com:wmecheri/tmux.git
+g clone git@github.com:wmecheri/nvim.git ~/.config/nvim
+g clone git@github.com:wmecheri/tmux.git ~/.config/tmux
 
